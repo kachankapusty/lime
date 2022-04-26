@@ -1,0 +1,66 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --light-green: #70FF00;
+    --green: #2FFD1E;
+    --herbal: #7FC945;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Italic.woff2') format('woff2'),
+    url('../fonts/DMSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Medium.woff2') format('woff2'),
+    url('../fonts/DMSans-Medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-MediumItalic.woff2') format('woff2'),
+    url('../fonts/DMSans-MediumItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-Bold.woff2') format('woff2'),
+    url('../fonts/DMSans-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../fonts/DMSans-BoldItalic.woff2') format('woff2'),
+    url('../fonts/DMSans-BoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+body {
+    box-sizing: border-box;
+
+    font-family: 'DM Sans', sans-serif, Arial;
+    font-size: 16px;
+    line-height: 32px;
+
+    background: var(--white);
+}
