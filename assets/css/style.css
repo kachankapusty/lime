@@ -64,3 +64,19 @@ body {
 
     background: var(--white);
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    font-family: 'DM Sans', sans-serif, Arial;
+    font-size: 16px;
+    line-height: 32px;
+
+    background: var(--white);
+}
+
+.map {
+
+}
