@@ -6,6 +6,7 @@
     --herbal: #7FC945;
     --main-header: #1C1D1B;
     --light-gray: #D8D8D8;
+    --accent-light: rgba(161, 138, 104, 1);
 }
 
 @font-face {
@@ -148,4 +149,74 @@ nav {
 .stock {
     background: rgba(47, 253, 30, 60%);
     border-bottom: 1px solid var(--black);
+}
+.swiper {
+    width: 100%;
+}
+
+.swiper-content {
+    position: relative;
+    height: 646px;
+}
+
+.slide-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.sile-content-text {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 32px;
+    color: var(--white);
+}
+
+.slide-header {
+    font-size: 33px;
+}
+
+.slide-price {
+    font-size: 26px;
+    margin-bottom: 33px;
+}
+
+.slide-button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 25px 14px 31px;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.catalog {
+    margin-top: 57px;
+}
+
+.catalog-headers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-header {
+    font-size: 33px;
+}
+
+.catalog-headers-link {
+    font-size: 20px;
+    color: var(--accent-light);
+}
+
+.catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-name, .product-price {
+    font-size: 20px;
+}
+
+.product-price {
+    color: var(--accent-light);
 }
