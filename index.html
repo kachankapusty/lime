@@ -6,8 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Lime</title>
 </head>
 <body>
@@ -54,6 +65,91 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="row">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-content slide">
+                            <img class="slide-image" src="./assets/img/swiper.jpg" alt="swiper">
+                            <div class="sile-content-text">
+                                <h2 class="slide-header">Интерьерные акценты</h2>
+                                <div class="slide-price">от 42 000 Р</div>
+                                <a href="#" class="slide-button">ПОСМОТРЕТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-content slide">
+                            <img class="slide-image" src="./assets/img/swiper.jpg" alt="swiper">
+                            <div class="sile-content-text">
+                                <h2 class="slide-header">Интерьерные акценты</h2>
+                                <div class="slide-price">от 42 000 Р</div>
+                                <a href="#" class="slide-button">ПОСМОТРЕТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-content slide">
+                            <img class="slide-image" src="./assets/img/swiper.jpg" alt="swiper">
+                            <div class="sile-content-text">
+                                <h2 class="slide-header">Интерьерные акценты</h2>
+                                <div class="slide-price">от 42 000 Р</div>
+                                <a href="#" class="slide-button">ПОСМОТРЕТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="catalog row">
+            <div class="catalog-headers">
+                <h2 class="catalog-header">Каталог</h2>
+                <a href="#" class="catalog-headers-link">Смотреть все</a>
+            </div>
+            <div class="catalog-content">
+                <ul class="catalog-list">
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-1.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Стул</div>
+                        <div class="product-price">2000 Р</div>
+                    </li>
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-2.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Стол</div>
+                        <div class="product-price">2500 Р</div>
+                    </li>
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-3.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Другой стол</div>
+                        <div class="product-price">3000 Р</div>
+                    </li>
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-4.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Полка</div>
+                        <div class="product-price">3000 Р</div>
+                    </li>
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-5.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Кресло</div>
+                        <div class="product-price">1900 Р</div>
+                    </li>
+                    <li class="catalog-item product">
+                        <img src="./assets/img/product-6.jpg" alt="Стол" class="product-image">
+                        <div class="product-name">Модное кресло</div>
+                        <div class="product-price">2900 Р</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script src="./assets/js/script.js" defer></script>
     <footer class="footer">
         <div class="social-media-item-bar">
             <div class="social-media-item">
