@@ -140,6 +140,36 @@ nav {
     color: var(--black);
 }
 
+.social-media-item-bar {
+    border-top: 1px solid var(--light-gray);
+}
+
+.social-media-item {
+    font-size: 30px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.social-media-item-link {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--black);
+}
+.social-media-images {
+    margin-top: -23px;
+    margin-left: 63px;
+
+}
+
+.social-media-logo {
+    width: 15px;
+}
+.all-rights {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 600px;
+}
+
 .active {
     background-color: rgba(112, 255, 0, 30%);
     border-bottom: 1px solid var(--black);
@@ -149,6 +179,7 @@ nav {
     background: rgba(47, 253, 30, 60%);
     border-bottom: 1px solid var(--black);
 }
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -162,5 +193,5 @@ footer {
 }
 
 .map {
-
+    display: flex;
 }
