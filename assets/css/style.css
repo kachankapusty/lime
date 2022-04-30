@@ -349,3 +349,76 @@ button.feedback-form-item {
     font-weight: 700;
     margin: 85px auto 0;
 }
+
+.about-header {
+     margin: 0;
+}
+
+.about-text {
+    margin-top: 22px;
+    color: var(--dark-gray);
+}
+
+.about-history {
+    margin-top: 60px;
+}
+
+.about-image {
+    margin-top: 50px;
+}
+
+.about-history-image {
+    float: right;
+    margin-left: 36px;
+    margin-bottom: 36px;
+}
+
+.about-history-text {
+    color: var(--dark-gray);
+}
+
+.faq {
+    margin-top: 106px;
+}
+
+.faq-head {
+    text-align: center;
+}
+
+.faq-header {
+    font-size: 40px;
+}
+
+.faq-description {
+    color: #707070;
+    font-size: 24px;
+}
+
+.faq-accordion-header {
+    position: relative;
+    cursor: pointer;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.faq-accordion-header:before, .faq-accordion-header:after {
+    content: '';
+    right: 0;
+    top: 50%;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--black);
+}
+
+.faq-accordion-header:after {
+    transform: rotate(90deg);
+    transition: transform 0.3s linear;
+}
+
+.ui-accordion-header-active:after {
+    transform: rotate(180deg);
+    transition: transform 0.3s linear;
+}
