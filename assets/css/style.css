@@ -7,6 +7,7 @@
     --main-header: #1C1D1B;
     --light-gray: #D8D8D8;
     --accent-light: rgba(161, 138, 104, 1);
+    --dark-gray: #707070;
 }
 
 @font-face {
@@ -291,7 +292,60 @@ footer {
     width: 285px;
 }
 
-main {
+.main {
     margin-top: 75px;
     margin-bottom: 75px;
+}
+
+.feedback-about, .feedback-form {
+    width: 50%;
+}
+
+.feedback-item:not(.feedback-item:last-child) {
+    margin-bottom: 55px;
+}
+
+.feedback-item-header {
+    font-size: 32px;
+}
+
+.feedback-item-data {
+    margin-top: 20px;
+    color: var(--dark-gray);
+    font-size: 24px;
+}
+
+.feedback-form-item {
+    border: none
+}
+
+.feedback-form {
+    text-align: center;
+}
+
+.feedback-form-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback-form-page > input {
+    width: 40%;
+    height: 45px;
+    border-bottom: 1px solid var(--light-gray);
+    margin-bottom: 80px;
+}
+
+.feedback-form-item + .message {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+button.feedback-form-item {
+    padding: 18px 142px;
+    color: var(--white);
+    background-color: var(--herbal);
+    font-weight: 700;
+    margin: 85px auto 0;
 }

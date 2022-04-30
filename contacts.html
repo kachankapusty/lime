@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Каталог</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script
@@ -57,8 +57,38 @@
             </nav>
         </div>
     </header>
-    <main>
-
+    <main class="row main">
+        <section class="feedback-about">
+            <ul class="feedback-list">
+                <li class="feedback-item phone">
+                    <div class="feedback-item-header">Наш основной номер телефона</div>
+                    <div class="feedback-item-data">88005553535</div>
+                </li>
+                <li class="feedback-item email">
+                    <div class="feedback-item-header">Электронная почта</div>
+                    <div class="feedback-item-data">stolyistulia@gmail.com</div>
+                </li>
+                <li class="feedback-item address">
+                    <div class="feedback-item-header">Адрес</div>
+                    <div class="feedback-item-data">Тюмень ул. Ленина д.76</div>
+                </li>
+                <li class="feedback-item index">
+                    <div class="feedback-item-header">Индекс</div>
+                    <div class="feedback-item-data">188954</div>
+                </li>
+            </ul>
+        </section>
+        <section class="feedback-form">
+            <h2>Мы Вам обязательно перезвоним</h2>
+            <form action="#" method="POST" class="feedback-form-page">
+                <input type="text" class="feedback-form-item" name="lastname" placeholder="Фамилия">
+                <input type="text" class="feedback-form-item" name="firstname" placeholder="Имя">
+                <input type="text" class="feedback-form-item" name="email" placeholder="Email">
+                <input type="text" class="feedback-form-item" name="phone-number" placeholder="Телефон">
+                <input type="text" class="feedback-form-item message" name="message" placeholder="Сообщение">
+                <button type="submit" class="feedback-form-item">Отправить</button>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <nav class="social-media-item-bar">
