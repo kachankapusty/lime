@@ -102,6 +102,13 @@ nav {
     padding: 0;
 }
 
+.header-block {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
 .main-header {
     color: var(--main-header);
     font-size: 35px;
@@ -120,6 +127,9 @@ nav {
 }
 
 .navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-bottom: 1px solid var(--light-gray);
 }
 
@@ -142,6 +152,50 @@ nav {
     color: var(--black);
 }
 
+#hamburger__toggle {
+    display: none;
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+    z-index: 99;
+}
+
+.hamburger__menu {
+    display: none;
+    position: relative;
+    height: 20px;
+    width: 26px;
+}
+
+#hamburger, #hamburger:after, #hamburger:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 26px;
+    background-color: var(--black);
+}
+
+#hamburger:before {
+    content: '';
+    top: 8px;
+}
+
+#hamburger:after {
+    content: '';
+    width: 80%;
+    right: 0;
+    top: 16px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--white);
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid var(--white)
+}
+
+
 .social-media-item {
     font-size: 30px;
     line-height: 22px;
@@ -162,10 +216,19 @@ nav {
 .social-media-logo {
     width: 15px;
 }
+
+.social-media-item-bar{
+    height: 100%;
+}
+
+.map {
+    width: 990px;
+    height: 380px;
+}
+
 .all-rights {
-    position: absolute;
-    margin-top: 400px;
-    margin-left: 600px;
+    text-align: center;
+    width: 100%;
 }
 
 .active {
@@ -190,6 +253,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .sile-content-text {
@@ -244,12 +308,18 @@ nav {
     font-size: 20px;
 }
 
+.product-image {
+    object-fit: cover;
+    width: 100%;
+}
+
 .product-price {
     color: var(--accent-light);
 }
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-top: 1px solid var(--light-gray);
 }
@@ -421,4 +491,185 @@ button.feedback-form-item {
 .ui-accordion-header-active:after {
     transform: rotate(180deg);
     transition: transform 0.3s linear;
+}
+
+@media (max-width: 767px) {
+    #hamburger__toggle, .hamburger__menu {
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        display: block;
+    }
+
+    .navigation-list {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: none;
+        flex-direction: column;
+        z-index: 2;
+        top: 0;
+        background-color: var(--white);
+        right: -150%;
+    }
+
+    #hamburger__toggle:checked ~ .hamburger__menu > .hamburger:after {
+        transform: rotate(45deg);
+        top: 8px;
+        width: 26px;
+        left: 0;
+        transition: transform 0.5s linear;
+    }
+
+    #hamburger__toggle:checked ~ .hamburger__menu > .hamburger:before {
+        transform: rotate(-45deg);
+        top: 8px;
+        transition: transform 0.5s linear;
+    }
+
+    #hamburger__toggle:checked ~ .hamburger__menu > .hamburger {
+        width: 0;
+        height: 0;
+    }
+
+    #hamburger__toggle:checked ~ .navigation-list {
+        right: 0;
+        transition: right 0.3s linear;
+        border: none;
+    }
+
+    #hamburger__toggle:checked ~ .navigation-list > .navigation-item {
+        width: 100%;
+        font-size: 20px;
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+    #hamburger__toggle:checked ~ .navigation-list > .active {
+        background-color: var(--white);
+    }
+
+    .stock {
+        background-color: var(--white);
+        border: none;
+    }
+
+    #hamburger__toggle:checked {
+        z-index: 4;
+    }
+
+    #hamburger, #hamburger:after, #hamburger:before {
+        z-index: 3;
+    }
+
+    #hamburger__toggle:checked ~ .hamburger__menu {
+        z-index: 3;
+    }
+
+    .main {
+        margin: 0;
+    }
+
+    .main-header {
+        font-size: 14px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .row {
+        padding: 5px;
+    }
+
+    .header-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sile-content-text {
+        padding-top: 80px;
+    }
+
+    .advantages-list {
+        flex-direction: column;
+    }
+
+    .swiper {
+        height: 299px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .slide-button {
+        padding: 6px 10px;
+    }
+
+    .slide-price {
+        margin-bottom: 18px;
+    }
+
+    .advantages, .catalog {
+        margin-bottom: 34px;
+    }
+
+    .advantages-item {
+        width: auto;
+        height: auto;
+        justify-content: normal;
+    }
+
+    .advantage-image {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .advantage-name {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .advantage-price {
+        display: none;
+    }
+
+    .advantages-list {
+        justify-content: normal;
+    }
+
+    .catalog-header {
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    .catalog-headers-link {
+        display: none;
+    }
+
+    .catalog-item {
+        padding: 5px;
+    }
+
+    .catalog-list {
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    #map {
+        width: 288px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .catalog-item {
+        width: 320px;
+    }
 }

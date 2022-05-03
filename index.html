@@ -21,13 +21,17 @@
 <body>
 <div class="container">
     <header class="header">
-        <div class="row align-items-center pb-2">
-            <h1 class="main-header col-4 ">МЕБЕЛЬ LIME</h1>
+        <div class="header-block">
+            <h1 class="main-header">МЕБЕЛЬ LIME</h1>
             <img class="header-logo" src="./assets/img/logo.png" alt="Logo">
         </div>
-        <div class="row">
+        <div>
             <nav class="header-nav navigation">
-                <ul class="navigation-list d-flex flex-row justify-content-between">
+                <input type="checkbox" name="" id="hamburger__toggle">
+                <label for="hamburger" class="hamburger__menu">
+                    <span class="hamburger" id="hamburger"></span>
+                </label>
+                <ul class="navigation-list">
                     <li class="navigation-item active">
                         <a href="index.html" class="navigation-item-link">Главная</a>
                     </li>
@@ -63,7 +67,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="row">
+        <section>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -104,7 +108,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section class="advantages row">
+        <section class="advantages">
             <ul class="advantages-list">
                 <li class="advantages-item">
                     <img src="./assets/img/advantages-1.jpg" alt="Стол" class="advantage-image">
@@ -134,7 +138,7 @@
                 </li>
             </ul>
         </section>
-        <section class="catalog row">
+        <section class="catalog ">
             <div class="catalog-headers">
                 <h2 class="catalog-header">Каталог</h2>
                 <a href="#" class="catalog-headers-link">Смотреть все</a>
@@ -195,16 +199,14 @@
                 </li>
             </ul>
         </nav>
-        <div class="map">
+        <div class="map" id="map">
         </div>
         <div class="all-rights">
             <p>© 2022 Мебель на заказ</p>
         </div>
-        <script src="./assets/js/script.js" defer></script>
-        <script type="text/javascript"
-                charset="utf-8"
-                async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af21a227fcae3e649688b9b47f26c4937e99db97c08eaa5f0741d463b4f54a14e&amp;width=990&amp;height=380&amp;lang=ru_RU&amp;scroll=true">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=cab79e3e-25d7-4e36-8e23-82975502d916&lang=ru_RU" defer type="text/javascript">
         </script>
+        <script src="./assets/js/script.js" defer></script>
     </footer>
 </div>
 </body>
