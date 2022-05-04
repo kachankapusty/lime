@@ -12,43 +12,48 @@
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="container">
     <header class="header">
-        <div class="row align-items-center pb-2">
-            <h1 class="main-header col-4 ">МЕБЕЛЬ LIME</h1>
+        <div class="header-block">
+            <h1 class="main-header">МЕБЕЛЬ LIME</h1>
             <img class="header-logo" src="./assets/img/logo.png" alt="Logo">
         </div>
-        <div class="row">
+        <div>
             <nav class="header-nav navigation">
-                <ul class="navigation-list d-flex flex-row justify-content-between">
+                <input type="checkbox" name="" id="hamburger__toggle">
+                <label for="hamburger" class="hamburger__menu">
+                    <span class="hamburger" id="hamburger"></span>
+                </label>
+                <ul class="navigation-list">
                     <li class="navigation-item active">
-                        <a href="#" class="navigation-item-link">Главная</a>
+                        <a href="index.html" class="navigation-item-link">Главная</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Кухни</a>
+                        <a href="catalog.html" class="navigation-item-link">Кухни</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Шкафы</a>
+                        <a href="catalog.html" class="navigation-item-link">Шкафы</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Гардеробные</a>
+                        <a href="catalog.html" class="navigation-item-link">Гардеробные</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Спальни</a>
+                        <a href="catalog.html" class="navigation-item-link">Спальни</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Гостинные</a>
+                        <a href="catalog.html" class="navigation-item-link">Гостинные</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Детские</a>
+                        <a href="catalog.html" class="navigation-item-link">Детские</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">О нас</a>
+                        <a href="about.html" class="navigation-item-link">О нас</a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#" class="navigation-item-link">Контакты</a>
+                        <a href="contacts.html" class="navigation-item-link">Контакты</a>
                     </li>
                     <li class="navigation-item stock">
                         <a href="#" class="navigation-item-link">Акции</a>
@@ -57,37 +62,85 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
+        <section class="about row">
+            <h2 class="about-header">Кто мы</h2>
+            <p class="about-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
+            </p>
+            <img src="./assets/img/about-image-1.jpg" class="about-image" alt="Image 1">
+            <div class="about-history">
+                <img src="./assets/img/about-image-2.jpg" class="about-history-image" alt="Image 2">
+                <p class="about-history-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Nunc sed porta augue. Morbi porta tempor odio, in molestie diam bibendum sed.
+                </p>
+            </div>
+
+            <img src="./assets/img/about-image-3.jpg" alt="Image 3">
+        </section>
+        <section class="faq row">
+            <div class="faq-head">
+                <h2 class="faq-header">Часто задаваемые вопросы</h2>
+                <p class="faq-description">Здесь есть все ответы</p>
+            </div>
+
+            <div id="accordion" class="faq-accordion">
+                <h3 class="faq-accordion-header">Section 1</h3>
+                <div>
+                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                </div>
+                <h3 class="faq-accordion-header">Section 2</h3>
+                <div>
+                    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                </div>
+                <h3 class="faq-accordion-header">Section 3</h3>
+                <div>
+                    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                </div>
+                <h3 class="faq-accordion-header">Section 4</h3>
+                <div>
+                    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <nav class="social-media-item-bar">
             <ul>
                 <li class="social-media-item">
-                    <a href="#" class="social-media-item-link">Контакты</a>
+                    <a href="contacts.html" class="social-media-item-link">Контакты</a>
                 </li>
                 <li class="social-media-item">
-                    <a href="#" class="social-media-item-link">О Нас</a>
+                    <a href="about.html" class="social-media-item-link">О Нас</a>
                 </li>
                 <li class="social-media-item">
                     <a href="#" class="social-media-item-link">
                         Соцсети:
                     </a>
                     <div class="social-media-images">
-                        <a href="#"><img src="./assets/img/vk_logo.svg" class="social-media-logo"></a>
-                        <a href="#"><img src="./assets/img/telegram_logo.svg" class="social-media-logo"></a>
+                        <a href="https://vk.com"><img src="./assets/img/vk_logo.svg" class="social-media-logo"></a>
+                        <a href="https://facebook.com"><img src="./assets/img/telegram_logo.svg" class="social-media-logo"></a>
                     </div>
                 </li>
             </ul>
         </nav>
-        <div class="map">
+        <div class="map" id="map">
         </div>
         <div class="all-rights">
             <p>© 2022 Мебель на заказ</p>
         </div>
-        <script type="text/javascript"
-                charset="utf-8"
-                async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af21a227fcae3e649688b9b47f26c4937e99db97c08eaa5f0741d463b4f54a14e&amp;width=990&amp;height=380&amp;lang=ru_RU&amp;scroll=true">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=cab79e3e-25d7-4e36-8e23-82975502d916&lang=ru_RU" defer type="text/javascript">
         </script>
         <script src="./assets/js/script.js" defer></script>
     </footer>
