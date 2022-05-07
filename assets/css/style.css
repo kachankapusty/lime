@@ -346,7 +346,6 @@ nav {
 .about-product {
     display: flex;
     height: 600px;
-    max-width: 600px;
 }
 
 .product-photo {
