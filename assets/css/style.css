@@ -309,7 +309,7 @@ nav {
     color: var(--white);
     background-color: var(--herbal);
     font-weight: 700;
-    margin: 85px auto 0;
+    margin: 30px auto 0;
 }
 
 .product-photo-big {
@@ -326,6 +326,10 @@ nav {
 .product-info {
     color: var(--dark-gray);
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 
 .product-article {
@@ -353,8 +357,8 @@ nav {
 
 .product-photo-image {
     object-fit: cover;
-    width: 145px;
-    height: 145px;
+    width: 150px;
+    height: 150px;
 }
 
 .product-name, .product-price {
