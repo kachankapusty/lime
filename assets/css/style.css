@@ -304,6 +304,55 @@ nav {
     flex-wrap: wrap;
 }
 
+.size-cash-button {
+    padding: 18px 142px;
+    color: var(--white);
+    background-color: var(--herbal);
+    font-weight: 700;
+    margin: 85px auto 0;
+}
+.product-photo-big {
+    padding-right: 35%;
+}
+
+.product-photo-image-small {
+
+}
+
+.product-info {
+
+    color: var(--dark-gray);
+    padding-left: 80px;
+}
+
+.product-article {
+    font-size: 15px;
+    color: gray;
+}
+
+.about-product {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-photo {
+    display: flex;
+
+}
+
+.product-photo-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.product-photo-image {
+    object-fit: cover;
+    width: 20px;
+    margin-bottom: 10%;
+}
+
 .product-name, .product-price {
     font-size: 20px;
 }
