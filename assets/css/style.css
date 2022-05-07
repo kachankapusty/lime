@@ -365,6 +365,17 @@ footer {
 .main {
     margin-top: 75px;
     margin-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form-header {
+    line-height: 32px;
 }
 
 .feedback-about, .feedback-form {
@@ -493,6 +504,31 @@ button.feedback-form-item {
     transition: transform 0.3s linear;
 }
 
+@media (max-width: 1200px) {
+    .feedback-form-header, .feedback-item-header, .feedback-item-data {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .feedback-form-page {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feedback-form-page > input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button.feedback-form-item {
+        margin-top: 20px;
+    }
+
+    .feedback-item:not(.feedback-item:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 767px) {
     #hamburger__toggle, .hamburger__menu {
         position: absolute;
@@ -569,6 +605,13 @@ button.feedback-form-item {
 
     .main {
         margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-about, .feedback-form {
+        padding: 10px;
+        width: 100%;
     }
 
     .main-header {
@@ -655,6 +698,11 @@ button.feedback-form-item {
 
     .catalog-list {
         justify-content: center;
+    }
+
+    button.feedback-form-item {
+    padding: 18px 0;
+    width: 100%;
     }
 
     .footer {
