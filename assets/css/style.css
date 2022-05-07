@@ -304,6 +304,73 @@ nav {
     flex-wrap: wrap;
 }
 
+.size-cash-button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--herbal);
+    font-weight: 700;
+    margin: 30px auto 0;
+    align-items: center;
+}
+
+
+.product-content {
+
+}
+.product-photo-big {
+    flex-basis: 80%;
+}
+
+.product-photo-image-big {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-photo-image-small {
+}
+
+.product-info {
+    color: var(--dark-gray);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.product-article {
+    font-size: 15px;
+    color: gray;
+}
+
+.about-product {
+    display: flex;
+    height: 600px;
+    flex-basis: 100%;
+}
+
+.product-photo {
+    display: flex;
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.product-photo-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.product-photo-image {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
 .product-name, .product-price {
     font-size: 20px;
 }
@@ -315,6 +382,11 @@ nav {
 
 .product-price {
     color: var(--accent-light);
+}
+
+.catalog-in-product {
+    padding: 10px;
+    margin-top: 100px;
 }
 
 footer {
@@ -714,10 +786,52 @@ button.feedback-form-item {
         width: 288px;
         border-radius: 8px;
     }
+
+    .product-content {
+        width: 100%;
+        max-width: 100%;
+        }
+
+    .about-product{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product-photo {
+        width: 288px;
+        flex-direction: column;
+    }
+
+    .product-photo-image-big {
+        width: 320px;
+        height: 320px;
+        margin-left: 50px;
+
+    }
+
+    .size-cash-button {
+        padding: 15px 32px;
+        font-weight: 700;
+        margin: 30px auto 0;
+    }
+    .product-all-photo {
+        display: none;
+    }
+    .catalog-in-product {
+        padding: 10px;
+        margin-top: 200px;
+    }
 }
 
 @media (max-width: 380px) {
     .catalog-item {
         width: 320px;
+    }
+
+    .product-photo-image-big {
+        width: 320px;
+        height: 320px;
+        margin-left: -8px;
+
     }
 }
