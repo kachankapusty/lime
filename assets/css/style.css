@@ -311,18 +311,21 @@ nav {
     font-weight: 700;
     margin: 85px auto 0;
 }
+
 .product-photo-big {
-    padding-right: 35%;
+}
+
+.product-photo-image-big {
+    width: 548px;
+    height: 600px;
 }
 
 .product-photo-image-small {
-
 }
 
 .product-info {
-
     color: var(--dark-gray);
-    padding-left: 80px;
+    height: 100%;
 }
 
 .product-article {
@@ -333,11 +336,12 @@ nav {
 .about-product {
     display: flex;
     justify-content: space-around;
+    height: 600px;
 }
 
 .product-photo {
     display: flex;
-
+    height: 100%;
 }
 
 .product-photo-list {
@@ -349,8 +353,8 @@ nav {
 
 .product-photo-image {
     object-fit: cover;
-    width: 20px;
-    margin-bottom: 10%;
+    width: 145px;
+    height: 145px;
 }
 
 .product-name, .product-price {
