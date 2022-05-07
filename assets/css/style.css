@@ -318,6 +318,7 @@ nav {
 .product-photo-image-big {
     width: 548px;
     height: 600px;
+    object-fit: cover;
 }
 
 .product-photo-image-small {
