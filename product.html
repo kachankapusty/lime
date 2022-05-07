@@ -5,13 +5,18 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Каталог</title>
+    <title>Товар</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css">
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -58,12 +63,29 @@
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main-content">
         <section class="product-content">
             <div class="about-product">
             <div class="product-photo">
                 <div class="product-photo-big">
-                    <img src="./assets/img/product-1.jpg" alt="Стол" class="product-photo-image-big">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="swiper-content slide">
+                                    <img src="./assets/img/product-1.jpg" alt="Стол" class="product-photo-image-big">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-content slide">
+                                    <img src="./assets/img/product-1.jpg" alt="Стол" class="product-photo-image-big">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
                 <div class="product-info">
@@ -73,7 +95,7 @@
                     <div class="product-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat, augue a volutpat hendrerit, sapien tortor faucibus augue, a maximus elit ex vitae libero. Sed quis mauris eget arcu facilisis consequat sed eu felis.
                     </div>
-                    <button class="size-cash-button">РАССЧИТАТЬ ПО РАЗМЕРАМ</button>
+                    <button class="size-cash-button popup-open">РАССЧИТАТЬ ПО РАЗМЕРАМ</button>
                 </div>
             </div>
             <div class="catalog-in-product">
@@ -137,8 +159,26 @@
         <script src="https://api-maps.yandex.ru/2.1/?apikey=cab79e3e-25d7-4e36-8e23-82975502d916&lang=ru_RU" defer
                 type="text/javascript">
         </script>
-        <script src="./assets/js/script.js" defer></script>
+        <script src="./assets/js/swiper.js" defer></script>
+        <script src="./assets/js/map.js" defer></script>
+        <script src="./assets/js/popup.js" defer></script>
     </footer>
+</div>
+<div class="popup-fade">
+    <div class="popup">
+        <a class="popup-close" href="#">Закрыть</a>
+        <div class="popup-form">
+            <h2 class="feedback-form-header">Мы Вам обязательно перезвоним</h2>
+            <form action="#" method="POST" class="feedback-form-page">
+                <input type="text" class="feedback-form-item" name="lastname" placeholder="Фамилия">
+                <input type="text" class="feedback-form-item" name="firstname" placeholder="Имя">
+                <input type="text" class="feedback-form-item" name="email" placeholder="Email">
+                <input type="text" class="feedback-form-item" name="phone-number" placeholder="Телефон">
+                <input type="text" class="feedback-form-item message" name="message" placeholder="Сообщение">
+                <button type="submit" class="feedback-form-item">Отправить</button>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>

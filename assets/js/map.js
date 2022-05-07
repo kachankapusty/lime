@@ -1,49 +1,4 @@
 $(document).ready(function () {
-    if (document.title === 'Lime' || document.title === 'Товар') {
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        });
-    }
-
-    if (document.title === 'О нас') {
-        $("#accordion").accordion();
-    }
-
-    $('.popup-open').click(function() {
-        $('.popup-fade').fadeIn();
-        return false;
-    });
-
-    $('.popup-close').click(function() {
-        $(this).parents('.popup-fade').fadeOut();
-        return false;
-    });
-
-    $(document).keydown(function(e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
-        }
-    });
-
-    $('.popup-fade').click(function(e) {
-        if ($(e.target).closest('.popup').length == 0) {
-            $(this).fadeOut();
-        }
-    });
-
     ymaps.ready(init);
     function init(){
         // Создание карты.
@@ -59,7 +14,7 @@ $(document).ready(function () {
         });
 
         BalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-           "<div class=\"address_wrap\">\n" +
+            "<div class=\"address_wrap\">\n" +
             "  <b class=\"address_title\">Вызов замерщика бесплатно</b>\n" +
             "  <div class=\"address_address\">\n" +
             "    <span class=\"address_street\">&ZeroWidthSpace;Тимофея Чаркова, 12 ст1</span><span class=\"address_metro metro_colored\"></span>\n" +
