@@ -422,6 +422,11 @@ footer {
     text-align: center;
 }
 
+.main-content {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
 .advantage-name {
     font-size: 20px;
     height: 64px;
@@ -599,6 +604,16 @@ button.feedback-form-item {
     .feedback-item:not(.feedback-item:last-child) {
         margin-bottom: 20px;
     }
+
+    .about-history {
+        width: 100%;
+    }
+
+    .about-history-image {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -773,7 +788,7 @@ button.feedback-form-item {
     }
 
     button.feedback-form-item {
-    padding: 18px 0;
+    padding: 14px 0;
     width: 100%;
     }
 
